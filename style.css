@@ -17,6 +17,21 @@ h2 {
     font-size: 1.8vw;
 }
 
+li {
+    line-height: 25px;
+}
+
+pre {
+    background-color: #99beca4d;
+}
+
+pre code {
+    white-space: pre;
+    margin-top: -1em;
+    margin-bottom: -2.2em;
+    display: block;
+}
+
 #nav-bar {
     grid-area: nav-bar;
     width: 20%;
@@ -47,7 +62,7 @@ h2 {
     border-top: 1px solid #3a3a74;
     padding: 5% 0;
     padding-left: 10%;
-    font-size: 1.4vw;
+    font-size: 1.3vw;
 }
 
 .nav-link:hover {
@@ -58,4 +73,10 @@ h2 {
 #main-doc {
     grid-area: main-doc;
     padding-left: 5%;
+}
+
+@media (max-width: 350px) {
+    li {
+        line-height: 20px;
+    }
 }
